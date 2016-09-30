@@ -10,7 +10,7 @@ The script runs interactively and asks for confirmation before killing anything.
 
 Requires *root* privileges to run. 
 
-# Disclaimer
+## Disclaimer
 
 ***Be advised that killing ssh sessions with programs open can have many adverse effects on your system!*** 
 
