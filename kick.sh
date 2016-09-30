@@ -263,7 +263,7 @@ localize_refresh() {
 
 ####### Prints localized messages to screen
 localize_print() {
-	if [[ -z "$@" ]]; then
+    if [[ -z "$@" ]]; then
         error_print "function localize_print(): Invalid parameter, cannot print"
         return 65
     fi
