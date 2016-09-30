@@ -244,8 +244,8 @@ localize_define() {
     M_CONFIRM_SESSION=("Are you sure that you want to disconnect the session:" "Tem certeza que deseja desconectar o a sessao:")
     M_CHOOSE_OPTION=("Choose an option below by entering its number." "Escolha uma das opcoes abaixo, usando o numero do item.")
     M_ENTER_OPTION=("Enter desired option [\"q\" or \"quit\" to leave]: " "Entre com a opcao desejada [\"q\" ou \"quit\" para sair]: ")
-    M_CONNECTED_USERS=("  Connected Users:" "  Usuarios conectados:")
-    M_OPEN_SESSIONS=(  "    Open Sessions:" "      Sessoes Abertas:")
+    M_CONNECTED_USERS=("  Connected users:" "  Usuarios conectados:")
+    M_OPEN_SESSIONS=(  "    Open sessions:" "      Sessoes abertas:")
     return 0
 }
 
