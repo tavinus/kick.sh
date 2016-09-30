@@ -11,8 +11,17 @@ The script runs interactively and asks for confirmation before killing anything.
 Requires *root* privileges to run. 
 
 ## Dependencies
-The script uses `awk`, `sort` and `who`, which are usually installed by default.
- 
+
+The script uses `awk`, `sort`, `who`, `killall` and `kill`, all of which are usually installed by default.
+
+## Methods of kicking
+
+Uses `who -u` to get the list of users and sessions. 
+
+Uses `killall -u <username> -HUP` to kick a user. 
+
+Uses `kill <PID>` to kill a specific session. 
+
 ## Localization
 The script uses the environmental variable `$LANG` to define its language. 
 
@@ -48,15 +57,6 @@ sudo make install
 ```
 sudo make uninstall
 ```
- 
-## Methods of kicking
-
-Uses `who -u` to get the list of users and sessions. 
-
-Uses `killall -u <username> -HUP` to kick a user. 
-
-Uses `kill <PID>` to kill a specific session.
-
 
 ## Wish List
 - Option to use `kill -9` in a session
