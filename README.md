@@ -6,9 +6,9 @@ Simple BASH script to kick users from a Linux/Unix box.
 
 The system manager can choose to kill all sessions from an user, or a specific session. 
 
-The script runs interactively and asks for confirmation before Killing anything.  
+The script runs interactively and asks for confirmation before killing anything.  
 
-Requires _root_ privileges to run. 
+Requires *root* privileges to run. 
 
 ## Dependencies
 The script uses `awk`, `sort` and `who`, which are usually installed by default.
@@ -50,6 +50,8 @@ sudo make uninstall
 ```
  
 ## Methods of kicking
+
+Uses `who -u` to get the list of users and sessions. 
 
 Uses `killall -u <username> -HUP` to kick a user. 
 
