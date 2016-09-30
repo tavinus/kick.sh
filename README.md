@@ -1,5 +1,5 @@
 # kick.sh
-Simple BASH script to kick users from a Linux server. 
+Simple BASH script to kick users from a Linux/Unix box. 
 
 The system manager can choose to kill all sessions from an user, or a specific session. 
 
