@@ -24,9 +24,9 @@ If an unsupported language is detected, the script will run in English.
  
 If you want to force a language, you can use something like: 
 
-`LANG="en_US.utf8" ./kick.sh`  
+`LANG="en_US.utf8" sudo ./kick.sh`  
 
-`LANG="pt_BR.iso88591" ./kick.sh`
+`LANG="pt_BR.iso88591" sudo ./kick.sh`
  
 Please note that even though the variable `$LANG` requires the encoding,
 kick.sh only uses the language part of the string to define the display language. 
