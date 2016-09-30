@@ -21,8 +21,7 @@ If you want to force a language, you can use something like:
 
 `LANG="en_US.utf8" ./kick.sh`
  
-Please note that even though the variable `$LANG` requires the encoding, 
-
+Please note that even though the variable `$LANG` requires the encoding,
 kick.sh only uses the language part of the string to define the display language. 
  
 So if `$LANG` is either `"pt_BR.utf8"` or `"pt_BR.iso88591"` would be the same for the display language.
