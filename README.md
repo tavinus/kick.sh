@@ -1,8 +1,10 @@
 # kick.sh
-Simple BASH script to kick users from a Linux server.
-The system manager can choose to kill all sessions from an user, or a specific session.
-Requires root privileges to run.
- 
+Simple BASH script to kick users from a Linux server. 
+
+The system manager can choose to kill all sessions from an user, or a specific session. 
+
+Requires root privileges to run. 
+
 ## Dependencies
 The script uses `awk` and `who`, which are usually installed by default.
  
