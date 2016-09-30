@@ -13,7 +13,7 @@ The script uses the environmental variable `$LANG` to define its language.
 
 If an unsupported language is detected, the script will run in English. 
 
-#### Current Supported Languages
+#### Currently Supported Languages
  - en_US
  - pt_BR
  
