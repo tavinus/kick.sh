@@ -31,7 +31,7 @@ If an unsupported language is detected, the script will run in English.
  - en_US
  - pt_BR
  
-***If you want to force a language, you can use something like:***
+#### If you want to force a language, you can use something like:
 
 ```
 LANG="en_US.utf8" sudo ./kick.sh
