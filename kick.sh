@@ -13,7 +13,7 @@
 #
 #########################################################################
 
-KICK_VERSION="0.2.9"
+KICK_VERSION="0.3.1"
 
 
 
@@ -161,7 +161,7 @@ run_command() {
         echo "Ciao!"$'\n'
         exit 0
     elif [[ "$ROPTION" -gt "0" ]] && [[ "$ROPTION" -lt "$total_options" ]]; then
-        if [[ "$ROPTION" < "$user_options" ]]; then
+        if [[ "$ROPTION" -lt "$user_options" ]]; then
             opt_index=$(($ROPTION - 1))
             user_name="${USERLIST[$opt_index]}"
             localize_refresh
