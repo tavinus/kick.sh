@@ -10,6 +10,13 @@ The script runs interactively and asks for confirmation before killing anything.
 
 Requires *root* privileges to run. 
 
+# Disclaimer
+
+***Be advised that killing ssh sessions with programs open can have many adverse effects on your system!*** 
+
+You should know what you are doing and I take no responsibility for any damage caused by this script.  
+I am not responsible for any damage you may cause when kicking people on their faces, or balls, or whatever. 
+
 ## Dependencies
 
 The script uses `awk`, `sort`, `who`, `killall` and `kill`, all of which are usually installed by default.
