@@ -15,7 +15,7 @@ Requires *root* privileges to run.
 ***Be advised that killing ssh sessions with programs open can have many adverse effects on your system!*** 
 
 You should know what you are doing and I take no responsibility for any damage caused by this script.  
-I am not responsible for any damage you may cause when kicking people on their faces, or balls, or whatever. 
+I am not responsible for any damage you may cause when kicking people on their faces, balls, or whatever. 
 
 ## Dependencies
 
