@@ -3,7 +3,8 @@
 #########################################################################
 # kick.sh
 #
-# Kicked by Console :)
+# "Kicked by Console" - Half Life (1998)
+#
 # A Simple Bash User Manager
 # Makes easy to kick users or close user sessions
 #
@@ -79,9 +80,12 @@ get_users() {
 ######################## MENU HANDLING #########################
 ################################################################
 
+
+####### Prints Kick! version banner
 print_banner() {
     echo $'\n'"Kick! v$KICK_VERSION by Tavinus"$'\n'
 }
+
 
 ####### Print User List on Menu
 print_users() {
@@ -139,7 +143,7 @@ print_menu() {
 ################################################################
 
 
-#######Check if the user confirmed an action (with localization)
+####### Check if confirmed an action (with localization)
 read_yes() {
     local y_answer="${M_Y[$LANG_INDEX]}"
     local yes_answer="${M_YES[$LANG_INDEX]}"
@@ -315,7 +319,6 @@ check_sudo() {
 ################################################################
 ############################ RUN ###############################
 ################################################################
-
 
 main "$@"
 
