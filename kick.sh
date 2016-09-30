@@ -9,9 +9,7 @@
 #
 # Author....: Gustavo Arnosti Neves
 # Created...: 29 Sept 2016
-#
-# Github....: 
-# 
+# Github....: https://github.com/tavinus/kick.sh
 #
 #########################################################################
 
