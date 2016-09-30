@@ -1,12 +1,12 @@
 # kick.sh
-Simple BASH script to kick users from a Linux/Unix box. 
+Simple BASH script to kick users from a Linux/Unix box.  
+![Alt text](/../screenshots/kick-user.png?raw=true "Kicking a user")
 
 The system manager can choose to kill all sessions from an user, or a specific session. 
 
 The script runs interactively and asks for confirmation before Killing anything.  
-Requires root privileges to run. 
 
-![Alt text](/../screenshots/kick-user.png?raw=true "Kicking a user")
+Requires root privileges to run. 
 
 ## Dependencies
 The script uses `awk`, `sort` and `who`, which are usually installed by default.
