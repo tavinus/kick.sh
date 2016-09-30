@@ -13,7 +13,7 @@
 #
 #########################################################################
 
-KICK_VERSION="0.2.7"
+KICK_VERSION="0.2.9"
 
 
 
@@ -210,7 +210,6 @@ run_command() {
 ####### Defines languages and check current language
 localize_start() {
     # LANG="pt_BR.iso88591"        # Set LANG manually here if you want
-    #LANG="en_US.utf8"             # Set LANG manually here if you want
     LOCALIZED=("en_US" "pt_BR")    # add localization here if implemented
                                    # the order is important, at to the end
     LANG_COUNTRY=${LANG%.*}        # Uses Env Var LANG to set location
@@ -241,7 +240,7 @@ localize_define() {
     M_Y=("y" "s")
     M_YES=("yes" "sim")
     M_YES_TO_CONFIRM=("[\"${M_Y[0]}\" or \"${M_YES[0]}\" to confirm]: " "[\"${M_Y[1]}\" ou \"${M_YES[1]}\" para confirmar]: ")
-    M_CONFIRM_SESSION=("Are you sure that you want to disconnect the session:" "Tem certeza que deseja desconectar o a sessao:")
+    M_CONFIRM_SESSION=("Are you sure that you want to disconnect the session:" "Tem certeza que deseja desconectar a sessao:")
     M_CHOOSE_OPTION=("Choose an option below by entering its number." "Escolha uma das opcoes abaixo, usando o numero do item.")
     M_ENTER_OPTION=("Enter desired option [\"q\" or \"quit\" to leave]: " "Entre com a opcao desejada [\"q\" ou \"quit\" para sair]: ")
     M_CONNECTED_USERS=("  Connected users:" "  Usuarios conectados:")
@@ -264,12 +263,15 @@ localize_refresh() {
 
 ####### Prints localized messages to screen
 localize_print() {
-    if [[ "${#@}" > "${#LOCALIZED[@]}" ]]; then
-        error_print "function localize_print(): Invalid number of parameters"
+	if [[ -z "$@" ]]; then
+        error_print "function localize_print(): Invalid parameter, cannot print"
         return 65
     fi
     local params=("$@")
-    echo -ne "${params[$LANG_INDEX]}"
+    local index_lang="$LANG_INDEX"
+    [[ "${#params[@]}" -le "$index_lang" ]] && index_lang=0 # defaults to english
+    local message="${params[$index_lang]}"
+    echo -ne "$message"
     return 0
 }
 
