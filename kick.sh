@@ -13,7 +13,7 @@
 #
 #########################################################################
 
-KICK_VERSION="0.2.3"
+KICK_VERSION="0.2.7"
 
 
 
@@ -160,7 +160,7 @@ run_command() {
     elif [[ ${ROPTION,,} = "q" ]] || [[ ${ROPTION,,} = "quit" ]] || [[ ${ROPTION,,} = "exit" ]]; then
         echo "Ciao!"$'\n'
         exit 0
-    elif [[ "$ROPTION" > "0" ]] && [[ "$ROPTION" < "$total_options" ]]; then
+    elif [[ "$ROPTION" -gt "0" ]] && [[ "$ROPTION" -lt "$total_options" ]]; then
         if [[ "$ROPTION" < "$user_options" ]]; then
             opt_index=$(($ROPTION - 1))
             user_name="${USERLIST[$opt_index]}"

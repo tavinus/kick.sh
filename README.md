@@ -3,10 +3,12 @@ Simple BASH script to kick users from a Linux/Unix box.
 
 The system manager can choose to kill all sessions from an user, or a specific session. 
 
+The script runs interactively and asks for confirmation before Killing anything. 
+
 Requires root privileges to run. 
 
 ## Dependencies
-The script uses `awk` and `who`, which are usually installed by default.
+The script uses `awk`, `sort` and `who`, which are usually installed by default.
  
 ## Localization
 The script uses the environmental variable `$LANG` to define its language. 
@@ -24,13 +26,13 @@ If you want to force a language, you can use something like:
 Please note that even though the variable `$LANG` requires the encoding,
 kick.sh only uses the language part of the string to define the display language. 
  
-So if `$LANG` is either `"pt_BR.utf8"` or `"pt_BR.iso88591"` would be the same for the display language.
+So if `$LANG` is either `"pt_BR.utf8"` or `"pt_BR.iso88591"` would be the same for the display language. 
  
 ## Makefile / Install
 
 The Makefile will install the script as `kick` (without the .sh) to `/usr/bin`. 
 
-Please change the makefile variables if you want to install it somewhere else or with another name.
+Please change the makefile variables if you want to install it somewhere else or with another name. 
 
 #### To install:
 ```
