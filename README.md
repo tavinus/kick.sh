@@ -17,6 +17,8 @@ Requires *root* privileges to run.
 You should know what you are doing and I take no responsibility for any damage caused by this script.  
 You should take full responsibility when kicking people on their faces, balls, or their open vi document. 
 
+From version 0.3.3 (or greater), kick.sh will show the user's process tree with `pstree` before confirming the kick.
+
 ## Dependencies
 
 The script uses `awk`, `sort`, `who`, `killall`, `pstree` and `kill`, all of which are usually installed by default.
