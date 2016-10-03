@@ -14,7 +14,7 @@
 #
 #########################################################################
 
-KICK_VERSION="0.3.1"
+KICK_VERSION="0.3.3"
 
 
 
@@ -169,6 +169,8 @@ run_command() {
             opt_index=$(($ROPTION - 1))
             user_name="${USERLIST[$opt_index]}"
             localize_refresh
+            echo ""; localize_print "${M_PSTREE_USER[@]}"
+            echo ""; pstree -npsu "$user_name"
             echo ""; localize_print "${M_CONFIRM_USER[@]}"
             echo ""; localize_print "${M_YES_TO_CONFIRM[@]}"
             read answer
@@ -261,6 +263,7 @@ localize_refresh() {
     M_SESSION_CLOSED=("The process with PID \"$s_pid\" was killed." "O processo com PID \"$s_pid\" foi morto.")
     M_SESSION_CLOSE_CANCELLED=("Killing process with PID \"$s_pid\" was cancelled / not confirmed" "Matar processo com PID \"$s_pid\" cancelado / nao confirmado")
     M_INVALID_COMMAND=("Invalid Command, the option \"$ROPTION\" was not available" "Comando invalido, a opcao \"$ROPTION\" nao estava disponivel")
+    M_PSTREE_USER=("Processes tree for \"$user_name\":", "Arvore de processos para \"$user_name\":")
     return 0
 }
 

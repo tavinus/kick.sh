@@ -19,7 +19,7 @@ You should take full responsibility when kicking people on their faces, balls, o
 
 ## Dependencies
 
-The script uses `awk`, `sort`, `who`, `killall` and `kill`, all of which are usually installed by default.
+The script uses `awk`, `sort`, `who`, `killall`, `pstree` and `kill`, all of which are usually installed by default.
 
 ## Methods of kicking
 
