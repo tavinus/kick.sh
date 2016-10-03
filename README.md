@@ -31,6 +31,8 @@ Uses `killall -u <username> -HUP` to kick a user.
 
 Uses `kill <PID>` to kill a specific session. 
 
+Uses `pstree -npsu <username>` to show user's processes before kicking a user.
+
 ## Localization
 The script uses the environmental variable `$LANG` to define its language. 
 
